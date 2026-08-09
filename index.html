@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Luigi Fernando</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <i class="fas fa-code"></i>
+      <span>Luigi Fernando</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+      <button class="toggle-btn" onclick="toggleTheme()">🌙 Tema</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-photo-wrapper">
+        <img class="hero-photo" src="doc/perfil.jpeg" alt="Foto profissional de Luigi Fernando">
+      </div>
+      <h1>Luigi Fernando</h1>
+      <p class="subtitle"><span id="typingText">Desenvolvedor Back-end</span><span class="cursor">|</span></p>
+      <p style="font-size: 1.1rem; margin-bottom: 2rem;">Apaixonado por tecnologia e desenvolvimento de soluções inovadoras</p>
+      <a href="#contato" class="cta-button">Entrar em Contato</a>
+      <a href="#projetos" class="cta-button secondary">Ver Projetos</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" class="container">
+    <h2>Sobre Mim</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Olá! Sou Luigi Fernando, um estudante apaixonado por desenvolvimento de software, especializado em Back-end com Java. Tenho experiência prática através de projetos acadêmicos e estágios, sempre buscando expandir meus conhecimentos e enfrentar novos desafios.</p>
+        
+        <p>Meu objetivo profissional é constante evolução técnica, contribuindo com soluções robustas e bem arquitetadas em ambientes colaborativos.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <strong>📚 Formação</strong>
+          <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">8º período em Ciência da Computação</p>
+        </div>
+        <div class="highlight-item">
+          <strong>🎯 Especialização</strong>
+          <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Desenvolvimento e implementação de Back-end com Java e Spring</p>
+        </div>
+        <div class="highlight-item">
+          <strong>🏆 Experiência</strong>
+          <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Bolsista, Estagiário e Técnico de Suporte</p>
+        </div>
+        <div class="highlight-item">
+          <strong>🌍 Localização</strong>
+          <p style="margin: 0.5rem 0 0; font-size: 0.95rem;">Palmares, Belo Horizonte - MG</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projetos" class="container">
+    <h2>Projetos Destacados</h2>
+    <div class="projects-grid">
+      <a class="project-card" href="https://github.com/Luigifao/dhc-financeAI" target="_blank" rel="noopener noreferrer">
+        <div class="project-header">
+          <h3>CriptoAdvisor: Sistema de Tomada de Decisão com LLM e Python</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-description">Este projeto utiliza uma Large Language Model (LLM) integrada via Ollama para interpretar dados de mercado de criptoativos e sugerir ações de compra, venda ou manutenção com base em indicadores técnicos e contexto de notícias.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Ollama</span>
+            <span class="project-tag">deepseek-coder</span>
+            <span class="project-tag">minstral</span>
+            <span class="project-tag">ccxt</span>
+            <span class="project-tag">pandas</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/Luigifao/dhc-compiler" target="_blank" rel="noopener noreferrer">
+        <div class="project-header">
+          <h3>Compilador</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-description">Compilador desenvolvido em Java, com análise léxica, sintática e semântica, gerando código intermediário e otimizado.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">ANTLR</span>
+            <span class="project-tag">Compiladores</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7472735379683733504/" target="_blank" rel="noopener noreferrer">
+        <div class="project-header">
+          <h3>Caracterização dos padrões de furtos e roubos em BH utilizando IA e Machine Learning</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-description">Este trabalho apresenta um estudo sobre a incidencia de furtos e roubos em Belo Horizonte utilizando dados abertos da Prefeitura. O objetivo é identificar padrões temporais e espaciais por meio de técnicas de pré processamento, algoritmo de mineiração e regras de associação.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Machine Learning</span>
+            <span class="project-tag">Data Analysis</span>
+            <span class="project-tag">Random Forest</span>
+            <span class="project-tag">Association Rules</span>
+
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/Luigifao/WebPageAdmin" target="_blank" rel="noopener noreferrer">
+        <div class="project-header">
+          <h3>Web Application</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-description">Portal web responsivo utilizando React, com componentes reutilizáveis e gerenciamento de estado eficiente.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">CSS</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
+        <div class="project-header">
+          <h3>API RESTful</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-description">API robusta desenvolvida com Django, implementando autenticação, validação de dados e documentação completa.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Django</span>
+            <span class="project-tag">REST</span>
+            <span class="project-tag">AWS</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/Luigifao/final-project" target="_blank" rel="noopener noreferrer">
+        <div class="project-header">
+          <h3>Chat em Tempo Real</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-description">Sistema de mensagens instantâneas com WebSocket, permitindo comunicação em tempo real entre usuários.</p>
+          <div class="project-tags">
+            <span class="project-tag">WebSocket</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">Real-time</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/seu-usuario/seu-repositorio" target="_blank" rel="noopener noreferrer">
+        <div class="project-header">
+          <h3>Docker Deployment</h3>
+        </div>
+        <div class="project-body">
+          <p class="project-description">Containerização de aplicações com Docker, facilitando deploy em diferentes ambientes e escalabilidade.</p>
+          <div class="project-tags">
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">DevOps</span>
+            <span class="project-tag">Linux</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>🔧 Backend</h3>
+        <div class="skill-list">
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">Spring Boot</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">Django</span>
+          <span class="skill-badge">AWS</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>🎨 Frontend</h3>
+        <div class="skill-list">
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">React</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>📱 Mobile</h3>
+        <div class="skill-list">
+          <span class="skill-badge">Flutter</span>
+          <span class="skill-badge">Dart</span>
+          <span class="skill-badge">Responsive</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>🗄️ Banco de Dados</h3>
+        <div class="skill-list">
+          <span class="skill-badge">SQL Server</span>
+          <span class="skill-badge">MySQL</span>
+          <span class="skill-badge">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>🛠️ Ferramentas</h3>
+        <div class="skill-list">
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">Docker</span>
+          <span class="skill-badge">Figma</span>
+          <span class="skill-badge">AWS</span>
+          <span class="skill-badge">Cloud</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>📊 Metodologias</h3>
+        <div class="skill-list">
+          <span class="skill-badge">Scrum</span>
+          <span class="skill-badge">Agile</span>
+          <span class="skill-badge">Git Flow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experiencia" class="container">
+    <h2>Experiência Profissional</h2>
+    <div class="experience-list">
+      <div class="experience-item">
+        <h3>Bolsista do Núcleo de Inovação e Tecnologia</h3>
+        <p class="role">Escola Superior Dom Helder</p>
+        <p class="period">2023 - Presente</p>
+        <p>Desenvolvimento de projetos inovadores de tecnologia, participação em pesquisas e mentoria de colegas. Experiência prática com frameworks modernos e boas práticas de desenvolvimento.</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Estagiário de TI</h3>
+        <p class="role">Escola Superior Dom Helder</p>
+        <p class="period">2022 - 2023</p>
+        <p>Suporte técnico, manutenção de sistemas, desenvolvimento de pequenas aplicações e documentação de processos. Desenvolvimento de soluções para otimizar workflows internos.</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Técnico de Apoio ao Usuário</h3>
+        <p class="role">Escola Superior Dom Helder</p>
+        <p class="period">2021 - 2022</p>
+        <p>Atendimento a usuários, resolução de problemas técnicos, instalação de softwares e manutenção de equipamentos. Desenvolvimento de conhecimento em infraestrutura de TI.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 4rem;">
+      <h2 style="border-bottom: none; margin-bottom: 3rem;">Formação Acadêmica</h2>
+      <div class="education-list">
+        <div class="education-item">
+          <h3>Ciência da Computação</h3>
+          <p class="institution">Escola Superior Dom Helder Câmara</p>
+          <p style="margin: 0.5rem 0;">8º período</p>
+          <p class="grade">Média global: 76/100</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Ensino Médio</h3>
+          <p class="institution">Colégio Tiradentes da PMMG</p>
+          <p style="margin: 0.5rem 0;">Concluído</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contato" class="container">
+    <h2>Vamos Conversar?</h2>
+    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; opacity: 0.9;">Estou aberto a novas oportunidades e desafios. Entre em contato comigo:</p>
+    <div class="contact-wrapper">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <a href="mailto:luigifao2@gmail.com">luigifao3@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <h3>Telefone</h3>
+        <a href="tel:+5531994566188">(31) 99456-6188</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Localização</h3>
+        <p>Palmares, Belo Horizonte - MG</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Luigi Fernando. Todos os direitos reservados.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Desenvolvido com ❤️ e paixão por tecnologia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
