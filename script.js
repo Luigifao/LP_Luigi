@@ -98,3 +98,8 @@ window.addEventListener('resize', () => {
     navLinks.classList.remove('active');
   }
 });
+
+// Funcionalidade para abrir certificados em uma nova guia
+function openCertificate(certificatePath, certificateTitle) {
+  window.open(certificatePath, certificateTitle, 'width=800,height=600');
+}
